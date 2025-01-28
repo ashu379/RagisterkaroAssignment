@@ -16,6 +16,8 @@ import AppPromoPage from "./components/AppPromoPage"
 import NumberImportant from "./components/NumberImportant"
 import DigitalReality from "./components/DigitalReality"
 import Brand from "./components/Brand"
+import TextNav from "./components/textNav"
+
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
   return (
     <>
       <div className="w-[100%]">
+        
+        <TextNav/>
          <Header/>
          <HeroSection/>
          <Company/>

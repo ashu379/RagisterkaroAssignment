@@ -10,12 +10,12 @@ const Brand = () => {
   return (
     <>
     <div className="grid  grid-flow-col m-[2rem] justify-items-center">
-        <img src={img1} className="w-[50%]"/>
-        <img src={img2} className="w-[50%]"/>
-        <img src={img3} className="w-[50%]"/>
-        <img src={img4} className="w-[50%]"/>
-        <img src={img5} className="w-[50%]"/>
-        <img src={img6} className="w-[50%]"/>
+        <img src={img1} className="w-[50%]" loading="lazy"/>
+        <img src={img2} className="w-[50%]" loading="lazy"/>
+        <img src={img3} className="w-[50%]" loading="lazy"/>
+        <img src={img4} className="w-[50%]" loading="lazy"/>
+        <img src={img5} className="w-[50%]" loading="lazy"/>
+        <img src={img6} className="w-[50%]" loading="lazy"/>
        </div>
     </>
   )

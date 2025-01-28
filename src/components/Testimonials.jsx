@@ -94,7 +94,7 @@ const Testimonials = () => {
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <div className="flex justify-between">
                   <div>
-                    <img src={coma} className="w-[2rem]" alt="coma" />
+                    <img src={coma} className="w-[2rem]" alt="coma" loading="lazy"/>
                   </div>
                   <div className="mt-3 ">
                     {[...Array(5)].map((_, index) => (
@@ -121,6 +121,7 @@ const Testimonials = () => {
                     src={testimonial.image}
                     alt={testimonial.name}
                     className="w-12 h-12 rounded-full border-2 border-gray-300"
+                    loading="lazy"
                   />
                   <div className="ml-3 text-left">
                     <h3 className="text-lg font-bold text-gray-800">

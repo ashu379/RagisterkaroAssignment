@@ -89,6 +89,7 @@ const Blogs = () => {
                 src={blog.image}
                 alt={blog.title}
                 className="w-full h-56 object-cover"
+                loading="lazy"
               />
               <div className="p-6">
                 <p className="text-gray-600 text-sm">

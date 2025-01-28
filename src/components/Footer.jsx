@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { FaArrowUp } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
@@ -67,10 +67,11 @@ const Footer = () => {
           <p className="text-sm">&copy; 2024 Registerkaro. All Rights Reserved.</p>
           <a
             href="#"
-            className="bg-yellow-400 p-2 rounded-full shadow-lg hover:bg-yellow-500"
-          >
-            <i className="fas fa-arrow-up text-blue-900"></i>
+            className="animate-bounce bg-yellow-400 p-2 w-[4rem] h-[4rem] rounded-full shadow-lg hover:bg-yellow-500 flex items-center justify-center"
+            >
+               <FaArrowUp className='text-[2rem] '/>
           </a>
+
         </div>
       </div>
     </footer>

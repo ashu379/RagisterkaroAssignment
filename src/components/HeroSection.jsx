@@ -11,99 +11,90 @@ import hands from '../assets/hands.png';
 import btn from '../assets/btn.png';
 import men from '../assets/men.png';
 
-
 const HeroSection = () => {
   return (
-   <>
-   <div className='border-sky-400 border'>
-
-   
-   <div className='flex flex-1 px-[8%] pt-10 '>
-       <span className='flex justify-evenly items-center gap-1'>
-        <img className='w-[10%]' src={star1} alt='not work'/>
-        <p className='font-semibold text-xl'>Google Rating</p>
-        <img className='w-[34%] mt-2' src={starts} alt='not work'/>
-       </span>
-   </div>
-   <div className='flex justify-center px-2'>
-    <div className='left p-10 w-[50%]'>
-       <div className='px-1'>
-        <h1 className='text-black text-6xl font-semibold'>Your trusted partner</h1>
-        <h1 className='text-black text-6xl font-semibold'>for compliance business</h1>
-        <span className='py-10 border-2'>
-           <img className='py-2' src={line} alt='not work'/>
-       </span>
-       </div>
-       <div className='py-2'>
-           <p className='text-xl'>An online business compliance platform that helps entrepreneurs and other individuals with various, registrations, tax filings, and other legal matters.</p>
-       </div>
-       <div className='py-4'>
-        <div className='flex justify-between'>
-          <span className='flex gap-2'>     
-            <img className='w-9 h-9' src={w} alt='not work'/>              
-            <span>
-                <img className='w-14 h-4' src={rating1} alt='not work'/>
-            <p>Customer Rating</p> 
-            </span>
-          </span>
-          <span className='flex gap-2'>
-          <img className='w-9 h-9' src={peopls} alt='not work'/>   
-            <span>
-                <img className='w-14 h-4' src={rating2}/>
-             <p>Clients</p>   
-            </span>    
-          </span>
-          <span className='flex gap-2'>
-          <img className='w-9 h-9' src={hands} alt='not work'/>    
-            <span>
-                <img className='w-14 h-4' src={rating3} alt='not work'/>
-            <p>Finacial Stability</p>    
-            </span>   
+    <>
+      <div className="border-sky-400 border">
+        <div className="flex flex-col md:flex-row px-6 md:px-[8%] pt-10">
+          <span className="flex items-center gap-2 mb-6 md:mb-0">
+            <img className="w-10 md:w-[10%]" src={star1} alt="not work" loading="lazy"/>
+            <p className="font-semibold text-lg md:text-xl">Google Rating</p>
+            <img className="w-28 md:w-[34%] mt-1" src={starts} alt="not work" loading="lazy"/>
           </span>
         </div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-       </div>
-       <div className='flex justify-start p-4 gap-4 py-4'>
-           <span className='flex justify-center bg-[#1c4670] items-center px-11 py-3 rounded-md text-white font-semibold cursor-pointer'>
-            <a>Talk An Expert</a>
-           </span>
-           <span className='flex justify-center items-center gap-2'>
-            <img className='w-6 h-6 cursor-pointer' src={btn} alt='not work'/>
-            <p>See how it works</p>
-           </span>
-       </div>
-       
-    </div>
-      
-      
-       
-       
-       <div className='right bg-gradient-to-r from-slate-50 to-blue-100'>
-        <div className='flex flex-col fixed right-1 justify-evenly gap-6 mt-4'>
-            <span className='shadow-black cursor-pointer border-2 bg-white py-2 px-5 text-black font-semibold rounded-md'>
+        <div className="flex flex-col md:flex-row justify-center px-4">
+          <div className="left p-6 md:p-10 w-full md:w-[50%]">
+            <div className="mb-6">
+              <h1 className="text-black text-3xl md:text-5xl lg:text-6xl font-semibold">
+                Your trusted partner
+              </h1>
+              <h1 className="text-black text-3xl md:text-5xl lg:text-6xl font-semibold">
+                for compliance business
+              </h1>
+              <div className="py-6">
+                <img className="py-2" src={line} alt="not work" loading="lazy"/>
+              </div>
+            </div>
+            <p className="text-base md:text-lg lg:text-xl mb-6">
+              An online business compliance platform that helps entrepreneurs and other individuals with various registrations, tax filings, and other legal matters.
+            </p>
+            <div className="flex flex-wrap gap-4 justify-between mb-6">
+              <div className="flex items-center gap-2">
+                <img className="w-9 h-9" src={w} alt="not work" loading="lazy"/>
+                <div>
+                  <img className="w-14 h-4" src={rating1} alt="not work" loading="lazy"/>
+                  <p className="text-sm">Customer Rating</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <img className="w-9 h-9" src={peopls} alt="not work" loading="lazy"/>
+                <div>
+                  <img className="w-14 h-4" src={rating2} alt="not work" loading="lazy"/>
+                  <p className="text-sm">Clients</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <img className="w-9 h-9" src={hands} alt="not work" loading="lazy"/>
+                <div>
+                  <img className="w-14 h-4" src={rating3} alt="not work" loading="lazy"/>
+                  <p className="text-sm">Financial Stability</p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="#"
+                className="flex justify-center bg-[#1c4670] items-center px-6 py-3 rounded-md text-white font-semibold"
+              >
+                Talk to an Expert
+              </a>
+              <span className="flex items-center gap-2">
+                <img className="w-6 h-6 cursor-pointer" src={btn} alt="not work" loading="lazy"/>
+                <p className="text-sm md:text-base">See how it works</p>
+              </span>
+            </div>
+          </div>
+          <div className="right w-full md:w-[50%] bg-gradient-to-r from-slate-50 to-blue-100">
+            <div className="flex flex-col gap-4 absolute right-4 top-[15rem]">
+              <span className="shadow border bg-white py-2 px-5 text-black font-semibold rounded-md cursor-pointer">
                 Annual Compliance
-            </span> 
-            <span className='shadow-black border-2 cursor-pointer bg-white py-2 px-5 text-black font-semibold rounded-md'>
-               Payroll Services
-            </span>
-            <span className='shadow-black border-2 cursor-pointer bg-white py-2 px-5 text-black font-semibold rounded-md'>
+              </span>
+              <span className="shadow border bg-white py-2 px-5 text-black font-semibold rounded-md cursor-pointer">
+                Payroll Services
+              </span>
+              <span className="shadow border bg-white py-2 px-5 text-black font-semibold rounded-md cursor-pointer">
                 Company Formation
-            </span>
-            <span className='shadow-black border-2 cursor-pointer bg-white py-2 px-5 text-black font-semibold rounded-md'>
+              </span>
+              <span className="shadow border bg-white py-2 px-5 text-black font-semibold rounded-md cursor-pointer">
                 Annual Compliance
-            </span>        
+              </span>
+            </div>
+            <img className="w-full mt-6" src={men} alt="not work" loading="lazy"/>
+          </div>
         </div>
-        <img src={men} alt='not work'/>    
-       </div>
-   </div>
-   </div>
-   </>
-  )
-}
+      </div>
+    </>
+  );
+};
 
-export default HeroSection
+export default HeroSection;
